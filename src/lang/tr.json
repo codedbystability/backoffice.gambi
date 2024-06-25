@@ -1,0 +1,32 @@
+{
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "position": "Open Position",
+    "open-position": "Open Positions",
+    "closed-position": "Closed Positions",
+    "financial-operations": "Financial Operations",
+    "vault-status": "Vault Status",
+    "bonuses": "Bonus List",
+    "transfers": "Transfer List",
+    "deposit": "Deposit",
+    "withdraw": "Withdraw",
+    "document-operations": "Document Operations",
+    "my-documents": "My Document",
+    "education-information": "Education/Information",
+    "sss": "F.A.Q",
+    "technical-analyses": "Technical Analyses",
+    "announcements-requests": "Announcements",
+    "system-announcements": "System Announcements",
+    "announcements": "Announcements",
+    "chat-communication": "Chat/Communication",
+    "chat": "Chat",
+    "financial-markets": "Financial Markets",
+    "signals": "Signals",
+    "news": "News",
+    "economic-calendar": "Economic Calendar",
+    "profile": "Profile",
+    "light-mode": "Light Mode",
+    "dark-mode": "Dark Mode",
+    "logout": "Logout"
+  }
+}
