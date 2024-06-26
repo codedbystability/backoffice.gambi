@@ -123,7 +123,7 @@ const ReloadUsages = () => {
 
                                     <span className='text-nowrap'>
 												{moment.unix(`${item.timestamp}`).format(
-                                                    'MMM Do YYYY',
+                                                    'MMM Do',
                                                 )}
 											</span>
 
