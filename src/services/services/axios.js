@@ -8,7 +8,7 @@ axios.interceptors.request.use(
         // config.headers['W-SECRET'] = `Xfx9zwPSLC1t2ltV`; // STIL.COM
         // config.headers['W-SECRET'] = `gXmqkthvbBjbcbHN`; // GAMBI.COM
         config.headers['W-SECRET'] = process.env.REACT_APP_WEBSITE_SECRET; // GAMBI.COM
-        config.baseURL = "https://api.stilsys.net/api/operator/";
+        config.baseURL = "https://services.gambi.com/api/operator/";
         return config;
     },
     function (error) {
@@ -29,7 +29,7 @@ export default {
     setHeader: (key, value) => axios.interceptors.request.use(
         function (config) {
             config.headers[key] = value;
-            config.baseURL = "https://api.stilsys.net/api/operator/";
+            config.baseURL = "https://services.gambi.com/api/operator/";
 
             return config;
         }

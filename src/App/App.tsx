@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useLayoutEffect, useRef} from 'react';
+import React, {useContext, useEffect, useLayoutEffect, useRef, useState} from 'react';
 import {ThemeProvider} from 'react-jss';
 import {ReactNotifications} from 'react-notifications-component';
 import {useFullscreen} from 'react-use';
@@ -15,6 +15,8 @@ import steps, {styles} from '../steps';
 import AsideRoutes from '../layout/Aside/AsideRoutes';
 import store from "../reducers/createReducers";
 import {Provider} from 'react-redux';
+import {useDevToolsStatus} from "../hooks/devToolStatusHook";
+import NotFoundDevTools from "../components/not-found-dev-tools";
 
 // if (window.location.href.includes('sun') || window.location.href.includes('localhost')) {
 //     // @ts-ignore
@@ -73,6 +75,23 @@ const App = () => {
             document.body.classList.remove('modern-design');
         }
     });
+
+    const isDevToolsOpen = useDevToolsStatus();
+
+    const [hide, setHide] = useState(false)
+    useEffect(() => {
+
+        if (isDevToolsOpen) {
+            console.info('STOP TRYING')
+            setHide(true)
+        } else
+            setHide(false)
+    }, [isDevToolsOpen])
+
+
+    if (hide)
+        return <NotFoundDevTools/>
+
 
     return (
         <Provider store={store}>

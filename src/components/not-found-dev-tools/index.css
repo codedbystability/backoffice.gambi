@@ -1,0 +1,43 @@
+
+.p-not-found .scene {
+    position: relative;
+    padding: 6rem
+}
+
+.p-not-found .scene .big-num {
+    color: var(--grey-700)
+}
+
+.p-not-found .scene .space {
+    position: absolute;
+    width: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%
+}
+
+.p-not-found .scene .gary {
+    position: absolute;
+    width: 20%;
+    left: 50%;
+    top: 30%;
+    animation: floating 6s ease-in-out infinite
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(-50%, -30%)
+    }
+    50% {
+        transform: translate(-50%)
+    }
+    to {
+        transform: translate(-50%, -30%)
+    }
+}
+
+
+.list-img {
+    width: 156px;
+    height: 209px;
+}

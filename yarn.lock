@@ -4520,6 +4520,11 @@ detective@^5.2.1:
     defined "^1.0.0"
     minimist "^1.2.6"
 
+devtools-detect@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/devtools-detect/-/devtools-detect-4.0.2.tgz#a115c50e0da3c746fbee8f132aabedcd7661bd8a"
+  integrity sha512-LfvHOc/a72gt4OvHOGFK51VmOeTM9Q5uuEeKX+k5oVWZM3qDoLBFVbdhjk7zXX54FuQ370L7OpmxQbNStT+7Gw==
+
 didyoumean@^1.2.2:
   version "1.2.2"
   resolved "https://registry.npmjs.org/didyoumean/-/didyoumean-1.2.2.tgz"
