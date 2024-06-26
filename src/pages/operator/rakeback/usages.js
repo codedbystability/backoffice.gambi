@@ -122,13 +122,13 @@ const ReloadUsages = () => {
                                         <div className='d-flex flex-column'>
 
                                     <span className='text-nowrap'>
-												{moment.unix(`${item.timestamp}`).format(
-                                                    'MMM Do',
+												{moment.unix(`${parseInt(item.timestamp / 1000)}`).format(
+                                                    'MMM Do YYYY',
                                                 )}
 											</span>
 
                                             <span className='text-nowrap'>
-												{moment.unix(`${item.timestamp}`).format(
+												{moment.unix(`${parseInt(item.timestamp / 1000)}`).format(
                                                     'h:mm a',
                                                 )}
 											</span>
